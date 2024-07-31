@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .starsWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 73%;
+    animation-name: movingStars1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .starsWrapper-2 {
+    left: -100vw;
+    right: 100vw;
+  }
+  
+  @keyframes movingStars1{
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100vw);
+    }
+  }
+  
+  .starsWrapper div:nth-child(3n) {
+    width: 0.3vmin;
+    height: 0.3vmin;
+  }
+  
+  .starsWrapper div:nth-child(3nstyle + 1) {
+    width: 0.4vmin;
+    height: 0.4vmin;
+  }
+  
+  .starsWrapper div:nth-child(3n + 2) {
+    width: 0.5vmin;
+    height: 0.5vmin;
+  }
+  
+  .starsWrapper div {
+    width: 1vmin;
+    height: 1vmin;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .starsWrapper div:nth-child(1) {
+    top: 87.4%;
+    left: 66.9%;
+  }
+  
+  .starsWrapper div:nth-child(2) {
+    top: 36.4%;
+    left: 57.6%;
+  }
+  
+  .starsWrapper div:nth-child(3) {
+    top: 30.3%;
+    left: 33.5%;
+  }
+  
+  .starsWrapper div:nth-child(4) {
+    top: 57.4%;
+    left: 74.2%;
+  }
+  
+  .starsWrapper div:nth-child(5) {
+    top: 84.7%;
+    left: 83.8%;
+  }
+  
+  .starsWrapper div:nth-child(6) {
+    top: 98.4%;
+    left: 27.4%;
+  }
+  
+  .starsWrapper div:nth-child(7) {
+    top: 1.5%;
+    left: 74.3%;
+  }
+  
+  .starsWrapper div:nth-child(8) {
+    top: 88.6%;
+    left: 49.1%;
+  }
+  
+  .starsWrapper div:nth-child(9) {
+    top: 65.1%;
+    left: 43.6%;
+  }
+  
+  .starsWrapper div:nth-child(10) {
+    top: 54.6%;
+    left: 98%;
+  }
+  
+  .starsWrapper div:nth-child(11) {
+    top: 87.8%;
+    left: 92.1%;
+  }
+  
+  .starsWrapper div:nth-child(12) {
+    top: 86.1%;
+    left: 15%;
+  }
+  
+  .starsWrapper div:nth-child(13) {
+    top: 70.3%;
+    left: 37.4%;
+  }
+  
+  .starsWrapper div:nth-child(14) {
+    top: 68.1%;
+    left: 80.6%;
+  }
+  
+  .starsWrapper div:nth-child(15) {
+    top: 94.2%;
+    left: 0.4%;
+  }
+  
+  .starsWrapper div:nth-child(16) {
+    top: 55.1%;
+    left: 69.4%;
+  }
+  
+  .starsWrapper div:nth-child(17) {
+    top: 54.1%;
+    left: 73.9%;
+  }
+  
+  .starsWrapper div:nth-child(18) {
+    top: 33.1%;
+    left: 98.1%;
+  }
+  
+  .starsWrapper div:nth-child(19) {
+    top: 83%;
+    left: 40.6%;
+  }
+  
+  .starsWrapper div:nth-child(20) {
+    top: 54.8%;
+    left: 18.3%;
+  }
+  
+  .starsWrapper div:nth-child(21) {
+    top: 70.9%;
+    left: 98.1%;
+  }
+  
+  .starsWrapper div:nth-child(22) {
+    top: 45.7%;
+    left: 14.7%;
+  }
+  
+  .starsWrapper div:nth-child(23) {
+    top: 16.4%;
+    left: 17%;
+  }
+  
+  .starsWrapper div:nth-child(24) {
+    top: 92.1%;
+    left: 7.3%;
+  }
+  
+  .starsWrapper div:nth-child(25) {
+    top: 50.5%;
+    left: 43.3%;
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    background-color: #1B1048;
+    overflow: hidden;
+    perspective: 50px;
+    perspective-origin: 50% 70%;
+  }
+  
+  .sunWrapper {
+    display: flex;
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .sun {
+    width: 40vmin;
+    height: 40vmin;
+    background-image: linear-gradient(to bottom, #F7D848, #E8B983 40%, #D97CC2 70%, #D530CE 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 30vmin #E7B38DAA;style
+    position: relative;
+    overflow: hidden;
+    filter: blur(0.1vmin);
+  }
+  
+  .sunChroma {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border-left: 0.4vmin solid #B63B6B;
+    border-right: 0.4vmin solid #6AA99B;
+  }
+  
+  .sun:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, transparent, 
+    transparent 54.5%, #1E154C44 55%, transparent 55.5%, 
+    transparent 58%, #1E154CAA 59%, transparent 60%,
+    transparent 64%, #1E154C 65%, transparent 66%, 
+    transparent 70%, #1E154C 71%, transparent 72%,
+    transparent 76.5%, #1E154C 78%, transparent 79.5%,
+    transparent 85.5%, #1E154C 87%, transparent 88.5%,
+    transparent 94%, #1E154C 96%, transparent 98%,
+    transparent 100%)
+  }
+  
+  .planeDensityGradient {
+    position: absolute;
+    top: 74.5%;
+    height: 30%;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, #E204E1 5%, transparent 25%);
+  }
+  
+  .plane {
+    position: absolute;
+    top: 70%;
+    width: 600%;
+    height: 30%;
+    left: -250%;
+    transform-origin: 50% 100% 0;
+    transform: rotateX(90deg);
+  }
+  
+  .plane:after, .plane:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .plane:after {
+     background: repeating-linear-gradient(90deg, transparent, transparent calc(95% / 40), #E204E1 calc(95% / 40), #E204E1 calc(100% / 40));
+  }
+  
+  .plane:before {
+     background: repeating-linear-gradient(0deg, transparent, transparent calc(95% / 40), #E204E1 calc(95% / 40), #E204E1 calc(100% / 40));
+     animation-name: planeAnimation;
+     animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-timing-function: linear;
+  }
+  
+  @keyframes planeAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(5%);
+    }
+  }
+  
+  .backgroundNoise {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/h7pnlQs.jpg');
+    background-repeat: repeat;
+    opacity: 0.09;
+    background-position: 50%;
+    animation-iteration-count: infinite;
+    animation-name: backgroundNoiseRandom;
+    animation-timing-function: linear;
+    animation-duration: 100s;
+    background-size: 70% 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  
+  @keyframes backgroundNoiseRandom {
+    0% {
+      background-position: 4234% 2342%;
+    }
+    25% {
+      background-position: -38837% 43276%;
+    }
+    50% {
+      background-position: 7432% -1203%;
+    }
+    75% {
+      background-position: 3512% 94342%;
+    }
+    100% {
+      background-position: -13245% 7654%;
+    }
+  }
